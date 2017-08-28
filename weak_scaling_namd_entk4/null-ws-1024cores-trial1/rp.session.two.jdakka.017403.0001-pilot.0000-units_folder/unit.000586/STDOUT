@@ -1,0 +1,363 @@
+Charm++> Running on MPI version: 3.1
+Charm++> level of thread support used: MPI_THREAD_SINGLE (desired: MPI_THREAD_SINGLE)
+Charm++> Running in non-SMP mode: numPes 8
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: v6.8.0-rc1-8-gab16ae4-namd-charm-6.8.0-build-2017-Aug-03-26197
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 unique compute nodes (32-way SMP).
+Info: NAMD 2.12 for CRAY-XE-MPI-BlueWaters
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Comp. Chem. 26:1781-1802 (2005)
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 60800 for mpi-crayxe
+Info: Built Thu Aug 3 11:07:04 CDT 2017 by jphillip on h2ologin2
+Info: Running on 8 processors, 8 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.0285909 s
+Info: 65.8633 MB of memory in use based on /proc/self/stat
+Info: Configuration file is 2j6m-a698g/sim_confs/sim1.conf
+Info: Changed directory to 2j6m-a698g/sim_confs
+TCL: Suspending until startup complete.
+Warning: The following variables were set in the
+Warning: configuration file but will be ignored:
+Warning:    paraTypeCharmm (parameters)
+Info: EXTENDED SYSTEM FILE   ../replicas/rep85/equilibration/eq2.xsc
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               2
+Info: NUMBER OF STEPS        0
+Info: STEPS PER CYCLE        10
+Info: PERIODIC CELL BASIS 1  70.6117 0 0
+Info: PERIODIC CELL BASIS 2  0 90.8822 0
+Info: PERIODIC CELL BASIS 3  0 0 77.1768
+Info: PERIODIC CELL CENTER   -0.248 -0.156 -0.047
+Info: WRAPPING WATERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             2000 steps
+Info: FIRST LDB TIMESTEP     50
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: VELOCITY FILE          ../replicas/rep85/equilibration/eq2.vel
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 0.833333
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           ../replicas/rep85/simulation/sim1.dcd
+Info: DCD FREQUENCY          5000
+Info: DCD FIRST STEP         5000
+Info: DCD FILE WILL CONTAIN UNIT CELL DATA
+Info: XST FILENAME           ../replicas/rep85/simulation/sim1.xst
+Info: XST FREQUENCY          5000
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        ../replicas/rep85/simulation/sim1
+Info: RESTART FILENAME       ../replicas/rep85/simulation/sim1.restart
+Info: RESTART FREQUENCY      200000
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      13.5
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 0.48
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        16.48
+Info: ENERGY OUTPUT STEPS    500
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    5000
+Info: PRESSURE OUTPUT STEPS  500
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   300
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 5 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: BERENDSEN PRESSURE COUPLING ACTIVE
+Info:     TARGET PRESSURE IS 1 BAR
+Info:     COMPRESSIBILITY ESTIMATE IS 4.57e-05 BAR^(-1)
+Info:     RELAXATION TIME IS 100 FS
+Info:     APPLIED EVERY 2 STEPS
+Info:     PRESSURE CONTROL IS GROUP-BASED
+Info:       CELL FLUCTUATION IS ISOTROPIC
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.257952
+Info: PME INTERPOLATION ORDER     4
+Info: PME GRID DIMENSIONS         72 96 80
+Info: PME MAXIMUM GRID SPACING    1
+Info: Attempting to read FFTW data from system
+Info: Attempting to read FFTW data from FFTW_NAMD_2.12_CRAY-XE-MPI-BlueWaters_FFTW3.txt
+Info: Optimizing 6 FFT steps.  1... 2... 3... 4... 5... 6...   Done.
+Info: Writing FFTW data to FFTW_NAMD_2.12_CRAY-XE-MPI-BlueWaters_FFTW3.txt
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      2
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-05
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1503707067
+Info: USE HYDROGEN BONDS?    NO
+Info: Using AMBER format force field!
+Info: AMBER PARM FILE        ../build/complex.top
+Info: COORDINATE PDB         ../replicas/rep85/equilibration/eq2.coor
+Info: Exclusions in PARM file will be ignored!
+Info: SCNB (VDW SCALING)     2
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Reading parm file (../build/complex.top) ...
+PARM file in AMBER 7 format
+Warning: Skipping ATOMIC_NUMBER in parm file while seeking MASS.
+Warning: Skipping SCEE_SCALE_FACTOR in parm file while seeking SOLTY.
+Warning: Skipping SCNB_SCALE_FACTOR in parm file while seeking SOLTY.
+Warning: Encounter 10-12 H-bond term
+Warning: Found 14889 H-H bonds.
+Info: SUMMARY OF PARAMETERS:
+Info: 71 BONDS
+Info: 145 ANGLES
+Info: 76 DIHEDRAL
+Info: 0 IMPROPER
+Info: 0 CROSSTERM
+Info: 0 VDW
+Info: 190 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: Reading pdb file ../replicas/rep85/equilibration/eq2.coor
+Info: TIME FOR READING PDB FILE: 0.205967
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 49394 ATOMS
+Info: 49448 BONDS
+Info: 8698 ANGLES
+Info: 18780 DIHEDRALS
+Info: 0 IMPROPERS
+Info: 0 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 47058 RIGID BONDS
+Info: 101124 DEGREES OF FREEDOM
+Info: 17225 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 17225 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 301478 amu
+Info: TOTAL CHARGE = 1.00115e-05 e
+Info: MASS DENSITY = 1.01082 g/cm^3
+Info: ATOM DENSITY = 0.0997314 atoms/A^3
+Info: *****************************
+Info: 
+Info: Entering startup at 1.68247 s, 79.7461 MB of memory in use
+Info: Startup phase 0 took 0.000205994 s, 79.7461 MB of memory in use
+Info: ADDED 70656 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.113083 s, 89.3281 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.00120211 s, 89.6836 MB of memory in use
+Info: Startup phase 3 took 0.000108004 s, 89.6836 MB of memory in use
+Info: Startup phase 4 took 0.000623941 s, 90.0625 MB of memory in use
+Info: Startup phase 5 took 0.000106096 s, 90.0625 MB of memory in use
+Info: PATCH GRID IS 4 (PERIODIC) BY 5 (PERIODIC) BY 4 (PERIODIC)
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: REMOVING COM VELOCITY -0.0290363 0.0313427 -0.0304745
+Info: LARGEST PATCH (25) HAS 676 ATOMS
+Info: TORUS A SIZE 24 USING 21
+Info: TORUS B SIZE 24 USING 11
+Info: TORUS C SIZE 24 USING 17
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.23873 s, 103.793 MB of memory in use
+Info: PME using 8 and 8 processors for FFT and reciprocal sum.
+Info: PME GRID LOCATIONS: 0 1 2 3 4 5 6 7
+Info: PME TRANS LOCATIONS: 0 1 2 3 4 5 6 7
+Info: PME USING 8 GRID NODES AND 8 TRANS NODES
+Info: Optimizing 4 FFT steps.  1... 2... 3... 4...   Done.
+Info: Startup phase 7 took 0.426641 s, 103.793 MB of memory in use
+Info: Startup phase 8 took 0.00331903 s, 103.793 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 9 took 0.00155687 s, 103.793 MB of memory in use
+Info: CREATING 1640 COMPUTE OBJECTS
+Info: useSync: 0 useProxySync: 0
+Info: Startup phase 10 took 0.00229311 s, 103.793 MB of memory in use
+Info: Startup phase 11 took 0.000162125 s, 103.793 MB of memory in use
+Info: Startup phase 12 took 9.67979e-05 s, 103.793 MB of memory in use
+Info: Finished startup at 2.47059 s, 103.793 MB of memory in use
+
+TCL: Running for 5000 steps
+PRESSURE: 0 2.94493 8.77306 -36.1287 8.77306 207.218 153.796 -36.1287 153.796 -323.923
+GPRESSURE: 0 21.2677 -11.3616 -15.0914 -110.802 171.272 49.7554 -39.9397 237.367 -210.257
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0       898.4210      2387.1388      3201.7074         0.0000        -175859.2242     20034.8862         0.0000         0.0000     29912.9003        -119424.1705       297.7109   -149337.0708   -119322.4734       297.7109            -37.9199        -5.9058    495270.3631       -37.9199        -5.9058
+
+OPENING EXTENDED SYSTEM TRAJECTORY FILE
+LDB: ============= START OF LOAD BALANCING ============== 3.81878
+LDB: ============== END OF LOAD BALANCING =============== 3.81893
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3.81958
+LDB: ============= START OF LOAD BALANCING ============== 8.99188
+LDB: Largest compute 105 load 0.186977 is 3.8% of average load 4.915145
+LDB: Average compute 0.022896 is 0.5% of average load 4.915145
+LDB: Partitioning computes with target load 0.491514
+LDB: Increased migratable compute count from 1520 to 1520
+LDB: Largest unpartitionable compute is 0.029324
+LDB: ============== END OF LOAD BALANCING =============== 8.99347
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 8.99416
+Info: Initial time: 8 CPUs 0.12939 s/step 0.748785 days/ns 526.082 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 10.2813
+LDB: ============== END OF LOAD BALANCING =============== 10.2814
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 10.282
+LDB: ============= START OF LOAD BALANCING ============== 15.4142
+LDB: Largest compute 105 load 0.188571 is 3.9% of average load 4.870839
+LDB: Average compute 0.022696 is 0.5% of average load 4.870839
+LDB: TIME 15.4153 LOAD: AVG 4.87084 MAX 5.13176  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 None MEM: 544.41 MB
+LDB: TIME 15.417 LOAD: AVG 4.87084 MAX 4.94175  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 TorusLB MEM: 544.41 MB
+LDB: ============== END OF LOAD BALANCING =============== 15.4185
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 15.4204
+Info: Initial time: 8 CPUs 0.128246 s/step 0.742163 days/ns 556.41 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 21.6256
+LDB: Largest compute 125 load 0.238558 is 3.9% of average load 6.086666
+LDB: Average compute 0.028230 is 0.5% of average load 6.086666
+LDB: TIME 21.6269 LOAD: AVG 6.08667 MAX 6.20327  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 None MEM: 640.672 MB
+LDB: TIME 21.6273 LOAD: AVG 6.08667 MAX 6.20327  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 RefineTorusLB MEM: 640.672 MB
+LDB: TIME 21.6275 LOAD: AVG 6.08667 MAX 6.1593  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 RefineTorusLB MEM: 640.672 MB
+LDB: ============== END OF LOAD BALANCING =============== 21.6283
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 21.629
+Info: Initial time: 8 CPUs 0.123939 s/step 0.717239 days/ns 640.672 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 27.7811
+LDB: Largest compute 105 load 0.232718 is 3.8% of average load 6.062432
+LDB: Average compute 0.028087 is 0.5% of average load 6.062432
+LDB: TIME 27.7823 LOAD: AVG 6.06243 MAX 6.10858  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 None MEM: 646.672 MB
+LDB: TIME 27.7827 LOAD: AVG 6.06243 MAX 6.10858  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 RefineTorusLB MEM: 646.672 MB
+LDB: TIME 27.7828 LOAD: AVG 6.06243 MAX 6.10858  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 RefineTorusLB MEM: 646.672 MB
+LDB: ============== END OF LOAD BALANCING =============== 27.7836
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 27.7843
+Info: Benchmark time: 8 CPUs 0.123054 s/step 0.712121 days/ns 646.672 MB memory
+Info: Benchmark time: 8 CPUs 0.122555 s/step 0.709228 days/ns 646.809 MB memory
+Info: Benchmark time: 8 CPUs 0.122761 s/step 0.710424 days/ns 646.809 MB memory
+Info: Benchmark time: 8 CPUs 0.122867 s/step 0.711038 days/ns 646.938 MB memory
+Info: Benchmark time: 8 CPUs 0.123042 s/step 0.712047 days/ns 646.938 MB memory
+Info: Benchmark time: 8 CPUs 0.122867 s/step 0.711037 days/ns 646.938 MB memory
+PRESSURE: 500 -17.4749 -42.9507 74.8454 -42.9507 -136.831 -82.1915 74.8454 -82.1915 85.8472
+GPRESSURE: 500 77.0145 -31.7835 165.1 -41.665 -110.779 -67.8489 32.0379 -122.842 40.818
+PRESSAVG: 500 -11.7998 16.7924 8.80552 16.7924 -30.3092 2.90298 8.80552 2.90298 58.3002
+GPRESSAVG: 500 -11.3651 16.3025 8.42079 16.8492 -30.088 4.99984 9.4832 2.28731 58.0896
+ENERGY:     500       930.8979      2518.0011      3241.0794         0.0000        -175980.1561     20134.8625         0.0000         0.0000     30088.8724        -119066.4427       299.4622   -149155.3151   -118963.9798       299.1702            -22.8195         2.3512    496296.3044         5.3971         5.5455
+
+PRESSURE: 1000 -292.126 -65.6465 -31.3194 -65.6465 1.96034 -28.075 -31.3194 -28.075 45.0727
+GPRESSURE: 1000 -199.993 -120.342 133.238 -29.2294 -84.8366 -82.4909 -55.2073 -26.3995 140.973
+PRESSAVG: 1000 -7.41001 5.17986 41.3155 5.17986 -8.60093 -29.3438 41.3155 -29.3438 19.7493
+GPRESSAVG: 1000 -7.93274 5.31802 41.9186 4.66281 -9.24856 -29.7347 41.2041 -28.8871 19.6844
+ENERGY:    1000       883.2351      2490.3458      3196.7297         0.0000        -175453.5204     19941.3976         0.0000         0.0000     30210.3127        -118731.4995       300.6709   -148941.8122   -118647.7705       300.5174            -81.6978       -47.9522    496281.2760         1.2461         0.8344
+
+PRESSURE: 1500 151.857 -2.70582 -84.1275 -2.70582 2.15058 -72.8934 -84.1275 -72.8934 -279.911
+GPRESSURE: 1500 204.119 -123.908 -8.1155 132.746 41.2208 -73.5527 -21.2957 -190.043 -267.066
+PRESSAVG: 1500 -19.6829 29.9908 57.737 29.9908 -5.83673 -46.5203 57.737 -46.5203 27.1118
+GPRESSAVG: 1500 -20.3673 29.7775 57.3906 31.6516 -4.62309 -46.3683 57.7205 -47.3033 27.2331
+ENERGY:    1500       870.1394      2404.0146      3177.8025         0.0000        -175774.0683     19908.9205         0.0000         0.0000     30024.7386        -119388.4527       298.8239   -149413.1913   -119293.6290       299.7252            -41.9679        -7.2419    496205.3194         0.5307         0.7476
+
+PRESSURE: 2000 -35.2725 164.03 -105.486 164.03 -65.6204 72.7127 -105.486 72.7127 103.564
+GPRESSURE: 2000 0.423633 158.152 -134.679 271.487 -7.74674 113.142 -75.8143 7.62778 105.779
+PRESSAVG: 2000 66.8396 -55.1993 53.849 -55.1993 -46.407 -40.7418 53.849 -40.7418 2.59309
+GPRESSAVG: 2000 67.2903 -55.5877 53.4476 -55.6295 -46.8135 -40.7729 54.4741 -40.973 3.13235
+ENERGY:    2000       920.8748      2469.8222      3160.0175         0.0000        -175547.5970     20061.0971         0.0000         0.0000     29987.8706        -118947.9147       298.4570   -148935.7854   -118847.5454       298.4616              0.8903        32.8186    497746.9964         7.6753         7.8697
+
+LDB: ============= START OF LOAD BALANCING ============== 268.766
+LDB: ============== END OF LOAD BALANCING =============== 268.766
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 268.767
+LDB: ============= START OF LOAD BALANCING ============== 274.965
+LDB: Largest compute 126 load 0.240180 is 4.0% of average load 6.073204
+LDB: Average compute 0.028160 is 0.5% of average load 6.073204
+LDB: TIME 274.966 LOAD: AVG 6.0732 MAX 6.18315  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 None MEM: 671.355 MB
+LDB: TIME 274.967 LOAD: AVG 6.0732 MAX 6.18315  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 RefineTorusLB MEM: 671.355 MB
+LDB: TIME 274.967 LOAD: AVG 6.0732 MAX 6.15539  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 RefineTorusLB MEM: 671.355 MB
+LDB: ============== END OF LOAD BALANCING =============== 274.968
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 274.969
+PRESSURE: 2500 243.271 85.5539 197.583 85.5539 -261.165 -72.3322 197.583 -72.3322 -164.451
+GPRESSURE: 2500 253.125 85.8851 180.362 44.0784 -218.564 -55.9024 152.285 -64.336 -108.709
+PRESSAVG: 2500 -11.1094 3.99999 25.4584 3.99999 38.3566 -17.0412 25.4584 -17.0412 -48.8411
+GPRESSAVG: 2500 -12.0807 4.02711 24.8584 4.43105 39.1691 -17.1091 26.3486 -16.5625 -48.5003
+ENERGY:    2500       902.5429      2522.2923      3195.1418         0.0000        -175524.5815     19762.9574         0.0000         0.0000     30005.8081        -119135.8392       298.6355   -149141.6472   -119031.9478       298.9041            -60.7817       -24.7163    495925.1857        -7.1980        -7.1373
+
+PRESSURE: 3000 -134.115 -30.2664 -138.176 -30.2664 41.1491 -25.7006 -138.176 -25.7006 -19.2142
+GPRESSURE: 3000 -79.1702 -20.4771 -141.024 -44.0788 86.7347 69.1401 -160.818 -61.4447 -19.0778
+PRESSAVG: 3000 16.7833 34.8395 24.5636 34.8395 21.6069 -15.0392 24.5636 -15.0392 -31.4243
+GPRESSAVG: 3000 17.4282 35.9726 25.4646 33.9163 21.049 -14.7694 23.8645 -14.544 -31.7176
+ENERGY:    3000       922.0879      2505.4372      3176.8646         0.0000        -176130.5723     20112.6127         0.0000         0.0000     30204.4849        -119209.0849       300.6129   -149413.5699   -119106.9705       298.3687            -37.3935        -3.8378    496199.5276         2.3219         2.2532
+
+PRESSURE: 3500 24.5171 131.488 -40.6327 131.488 139.658 -27.8493 -40.6327 -27.8493 -197.817
+GPRESSURE: 3500 67.8176 119.387 -33.2997 113.563 174.709 1.7587 -124.771 104.194 -153.106
+PRESSAVG: 3500 34.3764 6.49143 -33.9988 6.49143 -21.5786 -12.8683 -33.9988 -12.8683 1.67327
+GPRESSAVG: 3500 33.5263 6.43322 -33.4241 6.27462 -21.3241 -12.2734 -34.7854 -13.9058 2.69449
+ENERGY:    3500       899.6514      2455.4888      3165.1284         0.0000        -175794.0704     20128.7401         0.0000         0.0000     29906.6177        -119238.4441       297.6483   -149145.0618   -119146.0953       299.2783            -11.2139        29.8068    497084.0505         4.8237         4.9656
+
+PRESSURE: 4000 117.885 -132.212 136.358 -132.212 -61.4923 -39.431 136.358 -39.431 20.7949
+GPRESSURE: 4000 158.788 -177.426 163.23 -73.2114 -18.2201 -100.367 20.6175 -51.6147 31.2633
+PRESSAVG: 4000 6.20467 -22.9185 -11.092 -22.9185 -2.23404 -20.6526 -11.092 -20.6526 -3.27121
+GPRESSAVG: 4000 5.95509 -23.0144 -12.7765 -22.3975 -1.77693 -21.4703 -10.5269 -20.9451 -3.699
+ENERGY:    4000       932.8677      2539.2608      3188.8495         0.0000        -175939.6485     20075.7178         0.0000         0.0000     30288.4020        -118914.5507       301.4481   -149202.9527   -118816.4924       299.6596             25.7292        57.2769    496880.5052         0.2331         0.1597
+
+LDB: ============= START OF LOAD BALANCING ============== 516.638
+LDB: ============== END OF LOAD BALANCING =============== 516.638
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 516.639
+LDB: ============= START OF LOAD BALANCING ============== 522.836
+LDB: Largest compute 125 load 0.230596 is 3.8% of average load 6.096569
+LDB: Average compute 0.028240 is 0.5% of average load 6.096569
+LDB: TIME 522.837 LOAD: AVG 6.09657 MAX 6.17902  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 None MEM: 677.684 MB
+LDB: TIME 522.838 LOAD: AVG 6.09657 MAX 6.17902  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 RefineTorusLB MEM: 677.684 MB
+LDB: TIME 522.838 LOAD: AVG 6.09657 MAX 6.17902  PROXIES: TOTAL 160 MAXPE 20 MAXPATCH 3 RefineTorusLB MEM: 677.684 MB
+LDB: ============== END OF LOAD BALANCING =============== 522.839
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 522.839
+PRESSURE: 4500 -143.539 45.7991 -38.4253 45.7991 -134.569 -157.85 -38.4253 -157.85 21.2968
+GPRESSURE: 4500 -114.344 -17.7151 -21.8477 76.1775 -146.514 -192.95 -115.905 -80.2566 95.6937
+PRESSAVG: 4500 42.8849 -27.4392 -4.5809 -27.4392 -34.669 13.4584 -4.5809 13.4584 -17.4241
+GPRESSAVG: 4500 42.7799 -27.3114 -3.9045 -27.4454 -35.1955 12.1919 -4.90336 14.0282 -17.5427
+ENERGY:    4500       901.7709      2472.7623      3177.0717         0.0000        -175892.6264     20024.5026         0.0000         0.0000     30196.0427        -119120.4762       300.5289   -149316.5189   -119010.6767       300.3743            -85.6035       -55.0549    495951.2814        -3.0694        -3.3194
+
+PRESSURE: 5000 152.648 113.053 -35.6412 113.053 -109.922 -1.48829 -35.6412 -1.48829 13.0326
+GPRESSURE: 5000 145.184 112.955 -103.947 81.7511 -54.8497 84.5294 -14.9341 -44.7822 74.0843
+PRESSAVG: 5000 -27.6804 -46.2609 25.8679 -46.2609 -2.88661 -14.6834 25.8679 -14.6834 12.8015
+GPRESSAVG: 5000 -28.0712 -46.1117 26.3332 -47.5679 -2.57087 -13.4067 24.5934 -14.7327 12.7162
+TIMING: 5000  CPU: 619.697, 0.123883/step  Wall: 619.697, 0.123883/step, 0 hours remaining, 683.683594 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:    5000       894.7118      2478.2739      3212.9576         0.0000        -176318.2123     20183.9177         0.0000         0.0000     30070.7933        -119477.5580       299.2823   -149548.3513   -119365.6111       298.8326             18.5861        54.8062    494322.9195        -5.9218        -5.9753
+
+OPENING COORDINATE DCD FILE
+WRITING COORDINATES TO DCD FILE ../replicas/rep85/simulation/sim1.dcd AT STEP 5000
+The last position output (seq=5000) takes 0.157 seconds, 683.684 MB of memory in use
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 5000
+CLOSING EXTENDED SYSTEM TRAJECTORY FILE
+WRITING COORDINATES TO OUTPUT FILE AT STEP 5000
+CLOSING COORDINATE DCD FILE ../replicas/rep85/simulation/sim1.dcd
+The last position output (seq=-2) takes 0.465 seconds, 695.086 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 5000
+The last velocity output (seq=-2) takes 0.282 seconds, 695.086 MB of memory in use
+====================================================
+
+WallClock: 623.172119  CPUTime: 623.172119  Memory: 695.085938 MB
+[Partition 0][Node 0] End of program
+Application 60846838 resources: utime ~4983s, stime ~5s, Rss ~78364, inblocks ~57612, outblocks ~73997
