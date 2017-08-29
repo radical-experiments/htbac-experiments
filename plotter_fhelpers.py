@@ -2,6 +2,8 @@ import subprocess
 import pandas as pd
 import glob
 
+from datetime import datetime, timedelta
+
 # ----------------------------------------------------------------------------
 # Return a single plot without right and top axes
 def fig_setup():
@@ -76,7 +78,7 @@ def extract_rp_tx(sid):
 # Extracts NAMD Tx from its STDOUT file
 def extract_namd_tx(sid, pname):
 
-    stdouts = glob.glob('%s-%s/unit.*/STDOUT' % (sid, pname))
+    stdouts = glob.glob('%s-%s-units-folder/unit.*/STDOUT' % (sid, pname))
     df = pd.DataFrame(columns=['stage','NAMD Duration'])
     df.index.name = 'uid'
 
@@ -90,7 +92,7 @@ def extract_namd_tx(sid, pname):
 
             uid = line.split(',')[0].strip()
             stage = line.split(',')[1].strip()
-            out = '%s-%s/%s/STDOUT'%(sid, pname, uid)
+            out = '%s-%s-units-folder/%s/STDOUT'%(sid, pname, uid)
 
             f = open(out,'r')
             last_line = f.readlines()[-1:][0]
@@ -248,7 +250,6 @@ def extract_entk_overhead(df_pat):
         }
     }
     '''
-    from datetime import datetime, timedelta
 
     def totimestamp(dt, epoch=datetime(1970,1,1)):
         td = dt - epoch
