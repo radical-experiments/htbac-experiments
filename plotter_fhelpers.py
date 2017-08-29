@@ -206,7 +206,7 @@ def extract_rp_ttx(df_cu):
     df_cu.columns = ['Executing', 'AgentStagingOutputPending']
 
     # Create uid column to match requirements of extract_exec_time()
-    df_cu['uid'] = df.index
+    df_cu['uid'] = df_cu.index
     df_cu.reset_index
 
     super_dict = dict()
