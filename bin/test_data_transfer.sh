@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pipelines_list="16 32 64"
+pipelines_list="8 16 32 64 128"
 for $pipelines in $pipelines_list; do
 
     bw_uname="balasubr"
