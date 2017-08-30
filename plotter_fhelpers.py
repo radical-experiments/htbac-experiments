@@ -1,8 +1,11 @@
+import glob
 import subprocess
 import pandas as pd
-import glob
+import matplotlib as mpl
+import matplotlib.pyplot as plt
 
 from datetime import datetime, timedelta
+from IPython.core.display import display, HTML
 
 # ----------------------------------------------------------------------------
 # Return a single plot without right and top axes
@@ -18,8 +21,7 @@ def fig_setup():
 
 # ----------------------------------------------------------------------------
 # Extracts RP 0.42 Tx
-def extract_rp_tx(sid):
-
+def extract_rp_tx(sid,npipelines=None):
 
     # Load csv file with timestamps
     profile = pd.read_csv('./%s/%s/%s.prof' % (sid.split('/')[0],
@@ -70,6 +72,12 @@ def extract_rp_tx(sid):
     # Calculate $T_x$
     txs.tstamp = pd.to_numeric(txs.tstamp, errors='coerce')
     txs = txs.pivot(index='uid', columns='state', values='tstamp')
+
+    if npipelines:
+        print 'DEBUG: extract_rp_tx(): txs.size = %s; num pipelines = %s' % \
+            (txs.index.size, npipelines)
+        display(txs)
+
     txs['Tx'] = txs['StagingOutput']-txs['Executing']
 
     return txs
@@ -88,7 +96,7 @@ def extract_namd_tx(sid, pname):
 
     for line in read_exec_lines[2:]:
 
-        if int(line.split(',')[1].strip().split('_')[1].strip()) in [4,5,6]:
+        if int(line.split(',')[1].strip().split('_')[1].strip()) in [1,2,3,4,5,6,7]:
 
             uid = line.split(',')[0].strip()
             stage = line.split(',')[1].strip()
@@ -114,7 +122,7 @@ def extract_rp_tr(sid, pname):
 
 # ----------------------------------------------------------------------------
 # Calculates the time overlpas among elements of the same type
-def get_Toverlap(d, start_state, stop_state):
+def get_Toverlap(d, start_state, stop_state, debug=None):
     '''
     Helper function to create the list of lists from which to calculate the
     overlap of the elements of a DataFrame between the two boundaries passed as
@@ -128,12 +136,20 @@ def get_Toverlap(d, start_state, stop_state):
         #print states
         ranges.append([states[start_state], states[stop_state]])
 
-    for crange in collapse_ranges(ranges):
+    if debug:
+        print 'DEBUG: get_Toverlap(): ranges'
+        display(ranges)
+
+    for crange in collapse_ranges(ranges,debug):
         overlap += crange[1] - crange[0]
+
+    if debug:
+        print 'DEBUG: get_Toverlap(): overlap'
+        display(overlap)
 
     return overlap
 
-def collapse_ranges(ranges):
+def collapse_ranges(ranges, debug=None):
     """
     given be a set of ranges (as a set of pairs of floats [start, end] with
     'start <= end'. This algorithm will then collapse that set into the
@@ -162,6 +178,10 @@ def collapse_ranges(ranges):
     # sort ranges into a copy list
     _ranges = sorted (ranges, key=lambda x: x[0])
 
+    if debug:
+        print 'DEBUG: collapse_ranges(): sorted ranges'
+        display(_ranges)
+
     START = 0
     END = 1
 
@@ -188,7 +208,7 @@ def collapse_ranges(ranges):
 
 # ----------------------------------------------------------------------------
 # Extracts TTX
-def extract_rp_ttx(df_cu):
+def extract_rp_ttx(df_cu, debug=None):
     '''
     Convert dataframe into a dictionary - for each uid (compute unit id), we
     get the timestamps for 'Executing' and 'AgentStagningOutputPending' states
@@ -207,7 +227,12 @@ def extract_rp_ttx(df_cu):
 
     # Create uid column to match requirements of extract_exec_time()
     df_cu['uid'] = df_cu.index
-    df_cu.reset_index
+    df_cu.reset_index(inplace=True)
+    df_cu = df_cu.dropna()
+
+    if debug:
+        print 'DEBUG: df_cu'
+        display(df_cu)
 
     super_dict = dict()
     for row in df_cu.iterrows():
@@ -225,10 +250,13 @@ def extract_rp_ttx(df_cu):
         if 'AgentStagingOutputPending' not in super_dict[uid]:
             super_dict[uid]['AgentStagingOutputPending'] = end_probe
 
+    if debug:
+        print 'DEBUG: super_dict'
+        display(super_dict)
 
     # Use the magic function to get the total time spent between 'Executing'
     # and 'AgentStagingOutputPending'
-    return get_Toverlap(super_dict, 'Executing', 'AgentStagingOutputPending')
+    return get_Toverlap(super_dict, 'Executing', 'AgentStagingOutputPending', debug)
 
 
 # ---------------------------------------------------------------------------
@@ -280,17 +308,17 @@ def extract_entk_overhead(df_pat):
 
 # ---------------------------------------------------------------------------
 # ...
-def extract_ttx(df):
+# def extract_ttx(df):
 
-    # Rename columns to match requirements of extract_rp_ttx()
-    df.columns = ['Executing', 'AgentStagingOutputPending']
+#     # Rename columns to match requirements of extract_rp_ttx()
+#     df.columns = ['Executing', 'AgentStagingOutputPending']
 
-    # Create uid column to match requirements of extract_rp_ttx()
-    df['uid'] = df.index
-    df.reset_index
+#     # Create uid column to match requirements of extract_rp_ttx()
+#     df['uid'] = df.index
+#     df.reset_index
 
-    # Get TTX from Tx of all the units
-    ttx = extract_rp_ttx(df)
+#     # Get TTX from Tx of all the units
+#     ttx = extract_rp_ttx(df)
 
-    # Return TTX
-    return ttx
+#     # Return TTX
+#     return ttx
