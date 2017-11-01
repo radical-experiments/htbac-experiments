@@ -1,0 +1,61 @@
+#time,name,uid,state,event,msg
+1504644224.5230,umgr.scheduling.0.child:,,,sync abs,localhost.localdomain:138.201.86.166:1504644224.52:1504644224.52:ntp
+1504644224.5233,umgr.scheduling.0.child:MainThread,umgr.scheduling.0.child,,initialize,
+1504644225.4179,umgr.scheduling.0.child:MainThread,unit.000000,UMGR_SCHEDULING_PENDING,get,umgr.scheduling.queue.output.0000
+1504644225.4179,umgr.scheduling.0.child:MainThread,unit.000000,UMGR_SCHEDULING_PENDING,work start,
+1504644225.4180,umgr.scheduling.0.child:MainThread,unit.000000,UMGR_SCHEDULING,advance,
+1504644225.4181,umgr.scheduling.0.child:MainThread,unit.000000,UMGR_SCHEDULING,publish,
+1504644225.4185,umgr.scheduling.0.child:MainThread,unit.000000,UMGR_STAGING_INPUT_PENDING,advance,
+1504644225.4187,umgr.scheduling.0.child:MainThread,unit.000000,UMGR_STAGING_INPUT_PENDING,publish,
+1504644225.4190,umgr.scheduling.0.child:MainThread,unit.000000,UMGR_STAGING_INPUT_PENDING,put,umgr.staging.input.queue.input.0000
+1504644225.4191,umgr.scheduling.0.child:MainThread,unit.000000,UMGR_SCHEDULING_PENDING,work done ,
+1504644235.5516,umgr.scheduling.0.child:MainThread,unit.000001,UMGR_SCHEDULING_PENDING,get,umgr.scheduling.queue.output.0000
+1504644235.5517,umgr.scheduling.0.child:MainThread,unit.000001,UMGR_SCHEDULING_PENDING,work start,
+1504644235.5517,umgr.scheduling.0.child:MainThread,unit.000001,UMGR_SCHEDULING,advance,
+1504644235.5519,umgr.scheduling.0.child:MainThread,unit.000001,UMGR_SCHEDULING,publish,
+1504644235.5521,umgr.scheduling.0.child:MainThread,unit.000001,UMGR_STAGING_INPUT_PENDING,advance,
+1504644235.5523,umgr.scheduling.0.child:MainThread,unit.000001,UMGR_STAGING_INPUT_PENDING,publish,
+1504644235.5531,umgr.scheduling.0.child:MainThread,unit.000001,UMGR_STAGING_INPUT_PENDING,put,umgr.staging.input.queue.input.0000
+1504644235.5531,umgr.scheduling.0.child:MainThread,unit.000001,UMGR_SCHEDULING_PENDING,work done ,
+1504644252.3256,umgr.scheduling.0.child:MainThread,unit.000002,UMGR_SCHEDULING_PENDING,get,umgr.scheduling.queue.output.0000
+1504644252.3256,umgr.scheduling.0.child:MainThread,unit.000002,UMGR_SCHEDULING_PENDING,work start,
+1504644252.3257,umgr.scheduling.0.child:MainThread,unit.000002,UMGR_SCHEDULING,advance,
+1504644252.3259,umgr.scheduling.0.child:MainThread,unit.000002,UMGR_SCHEDULING,publish,
+1504644252.3261,umgr.scheduling.0.child:MainThread,unit.000002,UMGR_STAGING_INPUT_PENDING,advance,
+1504644252.3262,umgr.scheduling.0.child:MainThread,unit.000002,UMGR_STAGING_INPUT_PENDING,publish,
+1504644252.3271,umgr.scheduling.0.child:MainThread,unit.000002,UMGR_STAGING_INPUT_PENDING,put,umgr.staging.input.queue.input.0000
+1504644252.3271,umgr.scheduling.0.child:MainThread,unit.000002,UMGR_SCHEDULING_PENDING,work done ,
+1504645003.8236,umgr.scheduling.0.child:MainThread,unit.000003,UMGR_SCHEDULING_PENDING,get,umgr.scheduling.queue.output.0000
+1504645003.8236,umgr.scheduling.0.child:MainThread,unit.000003,UMGR_SCHEDULING_PENDING,work start,
+1504645003.8236,umgr.scheduling.0.child:MainThread,unit.000003,UMGR_SCHEDULING,advance,
+1504645003.8238,umgr.scheduling.0.child:MainThread,unit.000003,UMGR_SCHEDULING,publish,
+1504645003.8240,umgr.scheduling.0.child:MainThread,unit.000003,UMGR_STAGING_INPUT_PENDING,advance,
+1504645003.8242,umgr.scheduling.0.child:MainThread,unit.000003,UMGR_STAGING_INPUT_PENDING,publish,
+1504645003.8252,umgr.scheduling.0.child:MainThread,unit.000003,UMGR_STAGING_INPUT_PENDING,put,umgr.staging.input.queue.input.0000
+1504645003.8253,umgr.scheduling.0.child:MainThread,unit.000003,UMGR_SCHEDULING_PENDING,work done ,
+1504645564.6509,umgr.scheduling.0.child:MainThread,unit.000004,UMGR_SCHEDULING_PENDING,get,umgr.scheduling.queue.output.0000
+1504645564.6509,umgr.scheduling.0.child:MainThread,unit.000004,UMGR_SCHEDULING_PENDING,work start,
+1504645564.6509,umgr.scheduling.0.child:MainThread,unit.000004,UMGR_SCHEDULING,advance,
+1504645564.6511,umgr.scheduling.0.child:MainThread,unit.000004,UMGR_SCHEDULING,publish,
+1504645564.6513,umgr.scheduling.0.child:MainThread,unit.000004,UMGR_STAGING_INPUT_PENDING,advance,
+1504645564.6515,umgr.scheduling.0.child:MainThread,unit.000004,UMGR_STAGING_INPUT_PENDING,publish,
+1504645564.6526,umgr.scheduling.0.child:MainThread,unit.000004,UMGR_STAGING_INPUT_PENDING,put,umgr.staging.input.queue.input.0000
+1504645564.6526,umgr.scheduling.0.child:MainThread,unit.000004,UMGR_SCHEDULING_PENDING,work done ,
+1504652207.5628,umgr.scheduling.0.child:MainThread,unit.000005,UMGR_SCHEDULING_PENDING,get,umgr.scheduling.queue.output.0000
+1504652207.5628,umgr.scheduling.0.child:MainThread,unit.000005,UMGR_SCHEDULING_PENDING,work start,
+1504652207.5628,umgr.scheduling.0.child:MainThread,unit.000005,UMGR_SCHEDULING,advance,
+1504652207.5630,umgr.scheduling.0.child:MainThread,unit.000005,UMGR_SCHEDULING,publish,
+1504652207.5631,umgr.scheduling.0.child:MainThread,unit.000005,UMGR_STAGING_INPUT_PENDING,advance,
+1504652207.5634,umgr.scheduling.0.child:MainThread,unit.000005,UMGR_STAGING_INPUT_PENDING,publish,
+1504652207.5648,umgr.scheduling.0.child:MainThread,unit.000005,UMGR_STAGING_INPUT_PENDING,put,umgr.staging.input.queue.input.0000
+1504652207.5649,umgr.scheduling.0.child:MainThread,unit.000005,UMGR_SCHEDULING_PENDING,work done ,
+1504652840.6460,umgr.scheduling.0.child:MainThread,unit.000006,UMGR_SCHEDULING_PENDING,get,umgr.scheduling.queue.output.0000
+1504652840.6460,umgr.scheduling.0.child:MainThread,unit.000006,UMGR_SCHEDULING_PENDING,work start,
+1504652840.6460,umgr.scheduling.0.child:MainThread,unit.000006,UMGR_SCHEDULING,advance,
+1504652840.6462,umgr.scheduling.0.child:MainThread,unit.000006,UMGR_SCHEDULING,publish,
+1504652840.6465,umgr.scheduling.0.child:MainThread,unit.000006,UMGR_STAGING_INPUT_PENDING,advance,
+1504652840.6467,umgr.scheduling.0.child:MainThread,unit.000006,UMGR_STAGING_INPUT_PENDING,publish,
+1504652840.6473,umgr.scheduling.0.child:MainThread,unit.000006,UMGR_STAGING_INPUT_PENDING,put,umgr.staging.input.queue.input.0000
+1504652840.6474,umgr.scheduling.0.child:MainThread,unit.000006,UMGR_SCHEDULING_PENDING,work done ,
+1504652845.7034,umgr.scheduling.0.child:MainThread,umgr.scheduling.0,,stopped,
+1504652845.7034,umgr.scheduling.0.child:MainThread,,,END,

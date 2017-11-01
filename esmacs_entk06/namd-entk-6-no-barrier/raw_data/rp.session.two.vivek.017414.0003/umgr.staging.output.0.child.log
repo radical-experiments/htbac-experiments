@@ -1,0 +1,650 @@
+2017-09-05 18:02:03,392: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 19 2016, 06:48:10) [GCC 5.4.0 20160609]
+2017-09-05 18:02:03,392: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    :                      pid: 8918
+2017-09-05 18:02:03,392: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    :                      tid: MainThread
+2017-09-05 18:02:03,392: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : radical.pilot        version: 0.47-v0.46-3-g0f79ca80@devel
+2017-09-05 18:02:03,406: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : initialize umgr.staging.output.0.child
+2017-09-05 18:02:03,408: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : cfg: {'agents': {},
+ u'bridges': {u'control_pubsub': {'addr_in': 'tcp://138.201.86.166:46808',
+                                  'addr_out': 'tcp://138.201.86.166:43978',
+                                  u'bulk_size': 0,
+                                  u'log_level': u'debug',
+                                  u'stall_hwm': 1},
+              u'log_pubsub': {'addr_in': 'tcp://138.201.86.166:37481',
+                              'addr_out': 'tcp://138.201.86.166:35520',
+                              u'bulk_size': 0,
+                              u'log_level': u'debug',
+                              u'stall_hwm': 1},
+              u'state_pubsub': {'addr_in': 'tcp://138.201.86.166:34669',
+                                'addr_out': 'tcp://138.201.86.166:45330',
+                                u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1},
+              u'umgr_reschedule_pubsub': {'addr_in': 'tcp://138.201.86.166:40912',
+                                          'addr_out': 'tcp://138.201.86.166:41073',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1},
+              u'umgr_scheduling_queue': {'addr_in': 'tcp://138.201.86.166:34936',
+                                         'addr_out': 'tcp://138.201.86.166:34064',
+                                         u'bulk_size': 0,
+                                         u'log_level': u'debug',
+                                         u'stall_hwm': 1},
+              u'umgr_staging_input_queue': {'addr_in': 'tcp://138.201.86.166:41089',
+                                            'addr_out': 'tcp://138.201.86.166:43660',
+                                            u'bulk_size': 0,
+                                            u'log_level': u'debug',
+                                            u'stall_hwm': 1},
+              u'umgr_staging_output_queue': {'addr_in': 'tcp://138.201.86.166:43940',
+                                             'addr_out': 'tcp://138.201.86.166:36752',
+                                             u'bulk_size': 0,
+                                             u'log_level': u'debug',
+                                             u'stall_hwm': 1},
+              u'umgr_unschedule_pubsub': {'addr_in': 'tcp://138.201.86.166:33722',
+                                          'addr_out': 'tcp://138.201.86.166:43298',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1}},
+ u'bulk_collection_size': 100,
+ u'bulk_collection_time': 1.0,
+ 'cname': u'UMGRStagingOutputComponent',
+ u'components': {},
+ u'count': 1,
+ u'db_poll_sleeptime': 1.0,
+ 'number': 0,
+ 'owner': 'umgr.0000',
+ u'scheduler': u'round_robin',
+ 'uid': 'umgr.0000'}
+2017-09-05 18:02:03,408: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : start components: {}
+2017-09-05 18:02:03,408: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : alive check in term
+2017-09-05 18:02:03,408: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : START: umgr.staging.output.0.child register publisher log_pubsub
+2017-09-05 18:02:03,408: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : using addr tcp://138.201.86.166:37481 for pubsub log_pubsub
+2017-09-05 18:02:03,410: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0004
+2017-09-05 18:02:03,410: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : alive check in term
+2017-09-05 18:02:03,410: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : START: umgr.staging.output.0.child register publisher state_pubsub
+2017-09-05 18:02:03,410: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : using addr tcp://138.201.86.166:34669 for pubsub state_pubsub
+2017-09-05 18:02:03,411: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0004
+2017-09-05 18:02:03,411: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : alive check in term
+2017-09-05 18:02:03,411: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : START: umgr.staging.output.0.child register publisher control_pubsub
+2017-09-05 18:02:03,411: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : using addr tcp://138.201.86.166:46808 for pubsub control_pubsub
+2017-09-05 18:02:03,412: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0004
+2017-09-05 18:02:03,412: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : alive check in term
+2017-09-05 18:02:03,412: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : START: umgr.staging.output.0.child register subscriber umgr.staging.output.0.child.subscriber._cancel_monitor_cb
+2017-09-05 18:02:03,412: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : using addr tcp://138.201.86.166:43978 for pubsub control_pubsub
+2017-09-05 18:02:03,413: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : parent name: umgr.staging.output.0.child.subscriber._cancel_monitor_cb
+2017-09-05 18:02:03,413: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : start thread
+2017-09-05 18:02:03,413: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: umgr.staging.output.0.child.subscriber._cancel_monitor_cb.thread
+2017-09-05 18:02:03,413: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2017-09-05 18:02:03,413: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-09-05 18:02:03,414: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-09-05 18:02:03,414: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2017-09-05 18:02:03,414: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.staging.output.0.child.subscriber._cancel_monitor_cb.thread] alive
+2017-09-05 18:02:03,415: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : get msg: alive
+2017-09-05 18:02:03,415: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-09-05 18:02:03,415: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-09-05 18:02:03,415: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : child thread umgr.staging.output.0.child.subscriber._cancel_monitor_cb started
+2017-09-05 18:02:03,415: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : umgr.staging.output.0.child registered control_pubsub subscriber umgr.staging.output.0.child.subscriber._cancel_monitor_cb
+2017-09-05 18:02:03,415: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : alive check in term
+2017-09-05 18:02:03,415: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : using addr tcp://138.201.86.166:36752 for input umgr_staging_output_queue
+2017-09-05 18:02:03,416: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : registered input umgr.staging.output.0.child.work.UMGR_STAGING_OUTPUT_PENDING
+2017-09-05 18:02:03,416: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : START: umgr.staging.output.0.child register input UMGR_STAGING_OUTPUT_PENDING: umgr.staging.output.0.child.work.UMGR_STAGING_OUTPUT_PENDING
+2017-09-05 18:02:03,416: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : registered worker work [UMGR_STAGING_OUTPUT_PENDING]
+2017-09-05 18:02:03,416: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : child (me) initializing
+2017-09-05 18:02:03,416: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : parent name: umgr.staging.output.0.child.watch
+2017-09-05 18:02:03,416: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : start thread
+2017-09-05 18:02:03,416: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: DEBUG   : child name: umgr.staging.output.0.child.watch.thread
+2017-09-05 18:02:03,416: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: INFO    : child (me) initializing
+2017-09-05 18:02:03,416: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-09-05 18:02:03,416: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-09-05 18:02:03,416: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: INFO    : send alive
+2017-09-05 18:02:03,416: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: INFO    : put message: [umgr.staging.output.0.child.watch.thread] alive
+2017-09-05 18:02:03,417: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : get msg: alive
+2017-09-05 18:02:03,417: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-09-05 18:02:03,417: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-09-05 18:02:03,417: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : child thread umgr.staging.output.0.child.watch started
+2017-09-05 18:02:03,417: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : child (me) is alive
+2017-09-05 18:02:03,417: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : send alive
+2017-09-05 18:02:03,418: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : send message: [umgr.staging.output.0.child] alive
+2017-09-05 18:02:15,069: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000000)
+2017-09-05 18:02:15,069: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000001)
+2017-09-05 18:02:15,069: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-09-05 18:02:15,069: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000000 [2]
+2017-09-05 18:02:15,069: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000001 [2]
+2017-09-05 18:02:15,069: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 2 [True, True]
+2017-09-05 18:02:15,069: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000000 [2]
+2017-09-05 18:02:15,069: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000001 [2]
+2017-09-05 18:02:15,070: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000000', 'unit.000001']
+2017-09-05 18:02:15,070: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000000 ===| DONE
+2017-09-05 18:02:15,070: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000001 ===| DONE
+2017-09-05 18:02:19,991: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000002)
+2017-09-05 18:02:19,991: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000003)
+2017-09-05 18:02:19,991: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-09-05 18:02:19,991: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000002 [2]
+2017-09-05 18:02:19,991: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000003 [2]
+2017-09-05 18:02:19,991: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 2 [True, True]
+2017-09-05 18:02:19,991: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000002 [2]
+2017-09-05 18:02:19,991: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000003 [2]
+2017-09-05 18:02:19,992: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000002', 'unit.000003']
+2017-09-05 18:02:19,992: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000002 ===| DONE
+2017-09-05 18:02:19,992: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000003 ===| DONE
+2017-09-05 18:02:26,592: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000004)
+2017-09-05 18:02:26,592: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000005)
+2017-09-05 18:02:26,592: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-09-05 18:02:26,592: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000004 [2]
+2017-09-05 18:02:26,592: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000005 [2]
+2017-09-05 18:02:26,592: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 2 [True, True]
+2017-09-05 18:02:26,592: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000004 [2]
+2017-09-05 18:02:26,592: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000005 [2]
+2017-09-05 18:02:26,593: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000004', 'unit.000005']
+2017-09-05 18:02:26,593: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000004 ===| DONE
+2017-09-05 18:02:26,593: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000005 ===| DONE
+2017-09-05 18:02:31,938: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000006)
+2017-09-05 18:02:31,938: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:02:31,938: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000006 [1]
+2017-09-05 18:02:31,939: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:02:31,939: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000006 [1]
+2017-09-05 18:02:31,939: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000006']
+2017-09-05 18:02:31,939: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000006 ===| DONE
+2017-09-05 18:02:39,850: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000008)
+2017-09-05 18:02:39,850: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:02:39,850: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000008 [1]
+2017-09-05 18:02:39,851: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:02:39,851: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000008 [1]
+2017-09-05 18:02:39,852: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000008']
+2017-09-05 18:02:39,852: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000008 ===| DONE
+2017-09-05 18:02:45,154: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000009)
+2017-09-05 18:02:45,155: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:02:45,155: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000009 [1]
+2017-09-05 18:02:45,155: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:02:45,155: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000009 [1]
+2017-09-05 18:02:45,156: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000009']
+2017-09-05 18:02:45,156: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000009 ===| DONE
+2017-09-05 18:02:52,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000014)
+2017-09-05 18:02:52,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:02:52,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000014 [1]
+2017-09-05 18:02:52,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:02:52,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000014 [1]
+2017-09-05 18:02:52,252: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000014']
+2017-09-05 18:02:52,252: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000014 ===| DONE
+2017-09-05 18:03:06,457: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000013)
+2017-09-05 18:03:06,457: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:03:06,457: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000013 [1]
+2017-09-05 18:03:06,458: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:03:06,458: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000013 [1]
+2017-09-05 18:03:06,459: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000013']
+2017-09-05 18:03:06,459: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000013 ===| DONE
+2017-09-05 18:15:13,026: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000015)
+2017-09-05 18:15:13,026: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:15:13,026: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000015 [1]
+2017-09-05 18:15:13,026: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:15:13,026: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000015 [1]
+2017-09-05 18:15:13,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000015']
+2017-09-05 18:15:13,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000015 ===| DONE
+2017-09-05 18:15:34,370: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000017)
+2017-09-05 18:15:34,370: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:15:34,370: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000017 [1]
+2017-09-05 18:15:34,371: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:15:34,371: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000017 [1]
+2017-09-05 18:15:34,372: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000017']
+2017-09-05 18:15:34,372: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000017 ===| DONE
+2017-09-05 18:27:40,226: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000018)
+2017-09-05 18:27:40,226: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:27:40,226: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000018 [1]
+2017-09-05 18:27:40,226: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:27:40,226: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000018 [1]
+2017-09-05 18:27:40,227: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000018']
+2017-09-05 18:27:40,227: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000018 ===| DONE
+2017-09-05 18:27:54,479: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000012)
+2017-09-05 18:27:54,479: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:27:54,479: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000012 [1]
+2017-09-05 18:27:54,479: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:27:54,479: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000012 [1]
+2017-09-05 18:27:54,480: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000012']
+2017-09-05 18:27:54,480: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000012 ===| DONE
+2017-09-05 18:28:00,175: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000016)
+2017-09-05 18:28:00,175: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:28:00,175: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000016 [1]
+2017-09-05 18:28:00,175: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:28:00,175: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000016 [1]
+2017-09-05 18:28:00,176: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000016']
+2017-09-05 18:28:00,176: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000016 ===| DONE
+2017-09-05 18:28:14,496: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000010)
+2017-09-05 18:28:14,496: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:28:14,496: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000010 [1]
+2017-09-05 18:28:14,497: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:28:14,497: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000010 [1]
+2017-09-05 18:28:14,498: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000010']
+2017-09-05 18:28:14,498: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000010 ===| DONE
+2017-09-05 18:40:22,780: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000019)
+2017-09-05 18:40:22,780: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:40:22,780: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000019 [1]
+2017-09-05 18:40:22,780: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:40:22,780: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000019 [1]
+2017-09-05 18:40:22,781: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000019']
+2017-09-05 18:40:22,781: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000019 ===| DONE
+2017-09-05 18:40:28,508: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000007)
+2017-09-05 18:40:28,508: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:40:28,508: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000007 [1]
+2017-09-05 18:40:28,508: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:40:28,509: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000007 [1]
+2017-09-05 18:40:28,509: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000007']
+2017-09-05 18:40:28,509: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000007 ===| DONE
+2017-09-05 18:40:40,746: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000023)
+2017-09-05 18:40:40,746: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:40:40,746: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000023 [1]
+2017-09-05 18:40:40,746: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:40:40,746: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000023 [1]
+2017-09-05 18:40:40,747: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000023']
+2017-09-05 18:40:40,747: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000023 ===| DONE
+2017-09-05 18:40:42,283: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000011)
+2017-09-05 18:40:42,283: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:40:42,283: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000011 [1]
+2017-09-05 18:40:42,283: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:40:42,284: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000011 [1]
+2017-09-05 18:40:42,284: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000011']
+2017-09-05 18:40:42,284: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000011 ===| DONE
+2017-09-05 18:53:13,360: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000025)
+2017-09-05 18:53:13,360: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:53:13,360: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000025 [1]
+2017-09-05 18:53:13,360: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:53:13,360: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000025 [1]
+2017-09-05 18:53:13,361: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000025']
+2017-09-05 18:53:13,361: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000025 ===| DONE
+2017-09-05 18:53:16,351: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000021)
+2017-09-05 18:53:16,351: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 18:53:16,351: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000021 [1]
+2017-09-05 18:53:16,351: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 18:53:16,351: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000021 [1]
+2017-09-05 18:53:16,353: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000021']
+2017-09-05 18:53:16,353: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000021 ===| DONE
+2017-09-05 19:05:36,467: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000020)
+2017-09-05 19:05:36,467: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 19:05:36,467: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000020 [1]
+2017-09-05 19:05:36,467: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 19:05:36,467: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000020 [1]
+2017-09-05 19:05:36,468: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000020']
+2017-09-05 19:05:36,468: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000020 ===| DONE
+2017-09-05 19:05:38,014: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000024)
+2017-09-05 19:05:38,014: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 19:05:38,014: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000024 [1]
+2017-09-05 19:05:38,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 19:05:38,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000024 [1]
+2017-09-05 19:05:38,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000024']
+2017-09-05 19:05:38,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000024 ===| DONE
+2017-09-05 19:18:03,277: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000028)
+2017-09-05 19:18:03,277: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 19:18:03,277: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000028 [1]
+2017-09-05 19:18:03,277: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 19:18:03,277: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000028 [1]
+2017-09-05 19:18:03,279: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000028']
+2017-09-05 19:18:03,279: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000028 ===| DONE
+2017-09-05 19:18:07,867: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000029)
+2017-09-05 19:18:07,867: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 19:18:07,867: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000029 [1]
+2017-09-05 19:18:07,867: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 19:18:07,867: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000029 [1]
+2017-09-05 19:18:07,867: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000029']
+2017-09-05 19:18:07,868: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000029 ===| DONE
+2017-09-05 19:30:30,752: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000027)
+2017-09-05 19:30:30,752: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 19:30:30,752: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000027 [1]
+2017-09-05 19:30:30,752: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 19:30:30,752: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000027 [1]
+2017-09-05 19:30:30,753: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000027']
+2017-09-05 19:30:30,753: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000027 ===| DONE
+2017-09-05 19:30:33,852: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000033)
+2017-09-05 19:30:33,852: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 19:30:33,852: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000033 [1]
+2017-09-05 19:30:33,852: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 19:30:33,852: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000033 [1]
+2017-09-05 19:30:33,853: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000033']
+2017-09-05 19:30:33,853: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000033 ===| DONE
+2017-09-05 19:30:38,821: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000034)
+2017-09-05 19:30:38,822: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 19:30:38,822: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000034 [1]
+2017-09-05 19:30:45,159: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: 2j6m-a698g.tgz
+2017-09-05 19:30:45,159: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: 2j6m-a698g.tgz
+2017-09-05 19:30:45,159: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 19:30:45,159: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 19:30:45,159: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 19:30:45,159: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000//unit.000034/
+2017-09-05 19:30:45,159: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000034/2j6m-a698g.tgz
+2017-09-05 19:30:45,159: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 19:30:45,159: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 19:30:45,159: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 19:30:45,159: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with /home/vivek/repos/GB-SC18/scripts
+2017-09-05 19:30:45,159: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 19:30:45,160: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000034/2j6m-a698g.tgz
+2017-09-05 19:30:45,160: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 19:30:51,694: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 19:30:51,694: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000034 [1]
+2017-09-05 19:30:51,694: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000034']
+2017-09-05 19:30:51,694: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000034 ===| DONE
+2017-09-05 19:42:54,641: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000032)
+2017-09-05 19:42:54,641: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 19:42:54,641: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000032 [1]
+2017-09-05 19:42:54,642: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 19:42:54,642: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000032 [1]
+2017-09-05 19:42:54,642: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000032']
+2017-09-05 19:42:54,642: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000032 ===| DONE
+2017-09-05 19:43:07,816: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000035)
+2017-09-05 19:43:07,816: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 19:43:07,817: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000035 [1]
+2017-09-05 19:43:07,817: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 19:43:07,817: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000035 [1]
+2017-09-05 19:43:07,818: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000035']
+2017-09-05 19:43:07,818: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000035 ===| DONE
+2017-09-05 19:55:22,763: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000036)
+2017-09-05 19:55:22,764: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 19:55:22,764: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000036 [1]
+2017-09-05 19:55:22,764: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 19:55:22,764: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000036 [1]
+2017-09-05 19:55:22,765: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000036']
+2017-09-05 19:55:22,765: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000036 ===| DONE
+2017-09-05 19:55:40,605: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000037)
+2017-09-05 19:55:40,605: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 19:55:40,605: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000037 [1]
+2017-09-05 19:55:40,606: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 19:55:40,607: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000037 [1]
+2017-09-05 19:55:40,612: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000037']
+2017-09-05 19:55:40,613: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000037 ===| DONE
+2017-09-05 20:07:49,122: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000031)
+2017-09-05 20:07:49,123: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 20:07:49,123: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000031 [1]
+2017-09-05 20:07:49,123: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:07:49,123: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000031 [1]
+2017-09-05 20:07:49,124: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000031']
+2017-09-05 20:07:49,124: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000031 ===| DONE
+2017-09-05 20:08:00,875: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000039)
+2017-09-05 20:08:00,875: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 20:08:00,875: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000039 [1]
+2017-09-05 20:08:00,875: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:08:00,875: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000039 [1]
+2017-09-05 20:08:00,876: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000039']
+2017-09-05 20:08:00,876: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000039 ===| DONE
+2017-09-05 20:20:16,605: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000040)
+2017-09-05 20:20:16,605: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 20:20:16,605: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000040 [1]
+2017-09-05 20:20:16,605: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:20:16,605: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000040 [1]
+2017-09-05 20:20:16,607: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000040']
+2017-09-05 20:20:16,607: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000040 ===| DONE
+2017-09-05 20:20:28,275: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000026)
+2017-09-05 20:20:28,275: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000030)
+2017-09-05 20:20:28,275: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-09-05 20:20:28,275: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000026 [2]
+2017-09-05 20:20:28,275: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000030 [2]
+2017-09-05 20:20:28,275: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 2 [True, True]
+2017-09-05 20:20:28,275: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000026 [2]
+2017-09-05 20:20:28,275: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000030 [2]
+2017-09-05 20:20:28,277: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000026', 'unit.000030']
+2017-09-05 20:20:28,277: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000026 ===| DONE
+2017-09-05 20:20:28,277: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000030 ===| DONE
+2017-09-05 20:20:36,530: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000043)
+2017-09-05 20:20:36,530: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 20:20:36,530: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000043 [1]
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: 2j6m-a698g.tgz
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: 2j6m-a698g.tgz
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000//unit.000043/
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000043/2j6m-a698g.tgz
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with /home/vivek/repos/GB-SC18/scripts
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000043/2j6m-a698g.tgz
+2017-09-05 20:20:36,531: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 20:20:48,070: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:20:48,070: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000043 [1]
+2017-09-05 20:20:48,070: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000043']
+2017-09-05 20:20:48,070: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000043 ===| DONE
+2017-09-05 20:32:55,626: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000041)
+2017-09-05 20:32:55,627: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 20:32:55,627: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000041 [1]
+2017-09-05 20:32:55,627: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:32:55,627: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000041 [1]
+2017-09-05 20:32:55,628: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000041']
+2017-09-05 20:32:55,628: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000041 ===| DONE
+2017-09-05 20:33:02,306: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000042)
+2017-09-05 20:33:02,306: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 20:33:02,306: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000042 [1]
+2017-09-05 20:33:02,306: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: 2j6m-a698g.tgz
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: 2j6m-a698g.tgz
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000//unit.000042/
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000042/2j6m-a698g.tgz
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with /home/vivek/repos/GB-SC18/scripts
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000042/2j6m-a698g.tgz
+2017-09-05 20:33:02,307: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 20:33:14,281: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:33:14,281: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000042 [1]
+2017-09-05 20:33:14,282: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000042']
+2017-09-05 20:33:14,282: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000042 ===| DONE
+2017-09-05 20:33:14,285: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000044)
+2017-09-05 20:33:14,285: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000038)
+2017-09-05 20:33:14,285: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-09-05 20:33:14,285: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000044 [2]
+2017-09-05 20:33:14,285: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000038 [2]
+2017-09-05 20:33:14,286: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:33:14,286: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000044 [1]
+2017-09-05 20:33:14,287: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000044']
+2017-09-05 20:33:14,287: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000044 ===| DONE
+2017-09-05 20:33:14,287: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: 2j6m-a698g.tgz
+2017-09-05 20:33:14,287: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: 2j6m-a698g.tgz
+2017-09-05 20:33:14,288: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 20:33:14,288: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 20:33:14,288: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 20:33:14,288: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000//unit.000038/
+2017-09-05 20:33:14,288: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000038/2j6m-a698g.tgz
+2017-09-05 20:33:14,288: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 20:33:14,288: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 20:33:14,288: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 20:33:14,288: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with /home/vivek/repos/GB-SC18/scripts
+2017-09-05 20:33:14,288: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 20:33:14,288: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000038/2j6m-a698g.tgz
+2017-09-05 20:33:14,288: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 20:33:16,340: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:33:16,340: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000038 [1]
+2017-09-05 20:33:16,340: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000038']
+2017-09-05 20:33:16,340: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000038 ===| DONE
+2017-09-05 20:45:31,651: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000045)
+2017-09-05 20:45:31,651: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 20:45:31,651: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000045 [1]
+2017-09-05 20:45:31,651: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:45:31,651: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000045 [1]
+2017-09-05 20:45:31,652: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000045']
+2017-09-05 20:45:31,652: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000045 ===| DONE
+2017-09-05 20:45:33,303: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000022)
+2017-09-05 20:45:33,303: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 20:45:33,303: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000022 [1]
+2017-09-05 20:45:33,303: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:45:33,303: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000022 [1]
+2017-09-05 20:45:33,304: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000022']
+2017-09-05 20:45:33,304: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000022 ===| DONE
+2017-09-05 20:45:36,662: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000046)
+2017-09-05 20:45:36,700: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 20:45:36,700: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000046 [1]
+2017-09-05 20:45:36,700: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: 2j6m-a698g.tgz
+2017-09-05 20:45:36,700: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: 2j6m-a698g.tgz
+2017-09-05 20:45:36,700: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 20:45:36,700: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 20:45:36,700: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 20:45:36,701: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000//unit.000046/
+2017-09-05 20:45:36,701: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000046/2j6m-a698g.tgz
+2017-09-05 20:45:36,701: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 20:45:36,701: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 20:45:36,701: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 20:45:36,701: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with /home/vivek/repos/GB-SC18/scripts
+2017-09-05 20:45:36,701: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 20:45:36,701: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000046/2j6m-a698g.tgz
+2017-09-05 20:45:36,701: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 20:45:47,878: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:45:47,879: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000046 [1]
+2017-09-05 20:45:47,879: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000046']
+2017-09-05 20:45:47,879: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000046 ===| DONE
+2017-09-05 20:58:00,458: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000047)
+2017-09-05 20:58:00,458: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 20:58:00,458: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000047 [1]
+2017-09-05 20:58:00,458: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:58:00,458: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000047 [1]
+2017-09-05 20:58:00,459: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000047']
+2017-09-05 20:58:00,459: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000047 ===| DONE
+2017-09-05 20:58:05,528: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000049)
+2017-09-05 20:58:05,528: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000048)
+2017-09-05 20:58:05,528: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-09-05 20:58:05,528: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000049 [2]
+2017-09-05 20:58:05,528: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000048 [2]
+2017-09-05 20:58:05,528: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:58:05,528: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000049 [1]
+2017-09-05 20:58:05,529: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000049']
+2017-09-05 20:58:05,529: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000049 ===| DONE
+2017-09-05 20:58:05,529: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: 2j6m-a698g.tgz
+2017-09-05 20:58:05,529: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: 2j6m-a698g.tgz
+2017-09-05 20:58:05,529: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 20:58:05,529: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 20:58:05,529: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 20:58:05,529: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000//unit.000048/
+2017-09-05 20:58:05,530: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000048/2j6m-a698g.tgz
+2017-09-05 20:58:05,530: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 20:58:05,530: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 20:58:05,530: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 20:58:05,530: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with /home/vivek/repos/GB-SC18/scripts
+2017-09-05 20:58:05,530: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 20:58:05,530: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000048/2j6m-a698g.tgz
+2017-09-05 20:58:05,530: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 20:58:16,869: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 20:58:16,869: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000048 [1]
+2017-09-05 20:58:16,870: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000048']
+2017-09-05 20:58:16,870: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000048 ===| DONE
+2017-09-05 21:10:32,629: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000050)
+2017-09-05 21:10:32,629: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 21:10:32,629: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000050 [1]
+2017-09-05 21:10:32,629: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 21:10:32,629: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000050 [1]
+2017-09-05 21:10:32,630: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000050']
+2017-09-05 21:10:32,630: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000050 ===| DONE
+2017-09-05 21:10:36,042: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000051)
+2017-09-05 21:10:36,042: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 21:10:36,042: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000051 [1]
+2017-09-05 21:10:36,042: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 21:10:36,042: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000051 [1]
+2017-09-05 21:10:36,043: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000051']
+2017-09-05 21:10:36,043: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000051 ===| DONE
+2017-09-05 21:23:03,034: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000052)
+2017-09-05 21:23:03,034: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 21:23:03,034: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000052 [1]
+2017-09-05 21:23:03,034: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 21:23:03,034: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000052 [1]
+2017-09-05 21:23:03,036: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000052']
+2017-09-05 21:23:03,036: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000052 ===| DONE
+2017-09-05 21:23:04,805: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000053)
+2017-09-05 21:23:04,805: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-09-05 21:23:04,805: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000053 [1]
+2017-09-05 21:23:04,805: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 21:23:04,805: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000053 [1]
+2017-09-05 21:23:04,806: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000053']
+2017-09-05 21:23:04,806: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000053 ===| DONE
+2017-09-05 21:23:13,222: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000054)
+2017-09-05 21:23:13,222: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000055)
+2017-09-05 21:23:13,222: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-09-05 21:23:13,222: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000054 [2]
+2017-09-05 21:23:13,222: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000055 [2]
+2017-09-05 21:23:13,222: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: 2j6m-a698g.tgz
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: 2j6m-a698g.tgz
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000//unit.000054/
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000054/2j6m-a698g.tgz
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with /home/vivek/repos/GB-SC18/scripts
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000054/2j6m-a698g.tgz
+2017-09-05 21:23:13,223: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 21:23:25,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 21:23:25,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000054 [1]
+2017-09-05 21:23:25,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000054']
+2017-09-05 21:23:25,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000054 ===| DONE
+2017-09-05 21:23:25,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: 2j6m-a698g.tgz
+2017-09-05 21:23:25,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: 2j6m-a698g.tgz
+2017-09-05 21:23:25,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 21:23:25,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 21:23:25,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 21:23:25,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000//unit.000055/
+2017-09-05 21:23:25,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000055/2j6m-a698g.tgz
+2017-09-05 21:23:25,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : <- 2j6m-a698g.tgz (<type 'str'>)
+2017-09-05 21:23:25,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    2j6m-a698g.tgz
+2017-09-05 21:23:25,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    pwd
+2017-09-05 21:23:25,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   :    expand with /home/vivek/repos/GB-SC18/scripts
+2017-09-05 21:23:25,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : -> file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 21:23:25,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : src: gsisftp://bw.ncsa.illinois.edu/scratch/sciteam/balasubr/radical.pilot.sandbox/rp.session.two.vivek.017414.0003/pilot.0000/unit.000055/2j6m-a698g.tgz
+2017-09-05 21:23:25,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : tgt: file:///home/vivek/repos/GB-SC18/scripts/2j6m-a698g.tgz
+2017-09-05 21:23:27,445: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-09-05 21:23:27,445: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000055 [1]
+2017-09-05 21:23:27,445: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000055']
+2017-09-05 21:23:27,445: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000055 ===| DONE
+2017-09-05 21:23:29,201: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: WARNING : endpoint disappeard
+2017-09-05 21:23:29,201: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: INFO    : watcher closes
+2017-09-05 21:23:29,201: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: INFO    : put message: [umgr.staging.output.0.child.watch.thread] work finished
+2017-09-05 21:23:29,202: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2017-09-05 21:23:29,202: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2017-09-05 21:23:29,202: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: INFO    : put message: [umgr.staging.output.0.child.watch.thread] terminating
+2017-09-05 21:23:29,448: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_finalize_common()
+2017-09-05 21:23:29,448: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : alive check: proc invalid - stop [False - True]
+2017-09-05 21:23:29,496: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : stop umgr.staging.output.0.child (8918 : 8918 : MainThread) [radical.utils.process.Default.is_valid]
+2017-09-05 21:23:29,497: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : parent stops child
+2017-09-05 21:23:29,497: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_finalize_common()
+2017-09-05 21:23:29,497: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : TERM : umgr.staging.output.0.child unregister publisher log_pubsub
+2017-09-05 21:23:29,497: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : unregistered publisher log_pubsub
+2017-09-05 21:23:29,497: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : TERM : umgr.staging.output.0.child unregister publisher state_pubsub
+2017-09-05 21:23:29,498: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : unregistered publisher state_pubsub
+2017-09-05 21:23:29,498: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : TERM : umgr.staging.output.0.child unregister publisher control_pubsub
+2017-09-05 21:23:29,498: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : unregistered publisher control_pubsub
+2017-09-05 21:23:29,498: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : umgr.staging.output.0.child close prof
+2017-09-05 21:23:29,498: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : parent stops child
+2017-09-05 21:23:29,498: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-09-05 21:23:29,499: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2017-09-05 21:23:29,499: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : parent stops child
+2017-09-05 21:23:29,499: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-09-05 21:23:29,499: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: ERROR   : abort: ZMQError('Socket operation on non-socket')
+Traceback (most recent call last):
+  File "/home/vivek/ves/test-htbac/local/lib/python2.7/site-packages/radical/utils/threads.py", line 375, in _run
+    if not self.work_cb():
+  File "/home/vivek/ves/test-htbac/local/lib/python2.7/site-packages/radical/pilot/utils/component.py", line 1088, in work_cb
+    topic, msg = self._q.get_nowait(500)  # timout in ms
+  File "/home/vivek/ves/test-htbac/local/lib/python2.7/site-packages/radical/pilot/utils/pubsub.py", line 352, in get_nowait
+    if _uninterruptible(self._q.poll, flags=zmq.POLLIN, timeout=timeout):
+  File "/home/vivek/ves/test-htbac/local/lib/python2.7/site-packages/radical/pilot/utils/pubsub.py", line 50, in _uninterruptible
+    return f(*args, **kwargs)
+  File "/home/vivek/ves/test-htbac/local/lib/python2.7/site-packages/zmq/sugar/socket.py", line 558, in poll
+    evts = dict(p.poll(timeout))
+  File "/home/vivek/ves/test-htbac/local/lib/python2.7/site-packages/zmq/sugar/poll.py", line 99, in poll
+    return zmq_poll(self.sockets, timeout=timeout)
+  File "zmq/backend/cython/_poll.pyx", line 123, in zmq.backend.cython._poll.zmq_poll (zmq/backend/cython/_poll.c:2186)
+  File "zmq/backend/cython/_poll.pyx", line 116, in zmq.backend.cython._poll.zmq_poll (zmq/backend/cython/_poll.c:2036)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/_poll.c:2811)
+    raise ZMQError(errno)
+ZMQError: Socket operation on non-socket
+2017-09-05 21:23:29,499: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.staging.output.0.child.subscriber._cancel_monitor_cb.thread] ZMQError('Socket operation on non-socket')
+2017-09-05 21:23:29,499: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2017-09-05 21:23:29,499: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.staging.output.0.child.subscriber._cancel_monitor_cb.thread] terminating
+2017-09-05 21:23:29,500: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : super umgr.staging.output.0.child is invalid
+2017-09-05 21:23:29,500: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : component umgr.staging.output.0.child is invalid
+2017-09-05 21:23:29,501: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : stop umgr.staging.output.0.child (8918 : 8918 : MainThread) [radical.pilot.utils.component.Default.is_valid]
+2017-09-05 21:23:29,501: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : publisher log_pubsub is not registered
+2017-09-05 21:23:29,501: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : publisher state_pubsub is not registered
+2017-09-05 21:23:29,501: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : publisher control_pubsub is not registered
+2017-09-05 21:23:29,501: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : umgr.staging.output.0.child close prof
+2017-09-05 21:23:29,501: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : send message: [umgr.staging.output.0.child] terminating
+2017-09-05 21:23:29,501: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2017-09-05 21:23:29,501: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : parent stops child
