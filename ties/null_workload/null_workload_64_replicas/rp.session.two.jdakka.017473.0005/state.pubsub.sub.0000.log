@@ -1,0 +1,22 @@
+2017-11-03 19:36:27,271: state.pubsub.sub.0000: update.0                        : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 19 2016, 06:48:10) [GCC 5.4.0 20160609]
+2017-11-03 19:36:27,271: state.pubsub.sub.0000: update.0                        : MainThread     : INFO    :                      pid: 20095
+2017-11-03 19:36:27,271: state.pubsub.sub.0000: update.0                        : MainThread     : INFO    :                      tid: MainThread
+2017-11-03 19:36:27,271: state.pubsub.sub.0000: update.0                        : MainThread     : INFO    : radical.pilot        version: 0.47-v0.46.2-181-g138b1e15@HEAD-detached-at-origin-rc-v0.46.3
+2017-11-03 19:36:27,272: state.pubsub.sub.0000: update.0                        : MainThread     : INFO    : create state_pubsub - sub - tcp://138.201.86.166:41679
+2017-11-03 19:36:27,272: state.pubsub.sub.0000: update.0                        : MainThread     : DEBUG   : start process
+2017-11-03 19:36:27,273: state.pubsub.sub.0000: update.0                        : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-11-03 19:36:27,273: state.pubsub.sub.0000: update.0                        : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-11-03 19:36:27,273: state.pubsub.sub.0000: update.0                        : MainThread     : DEBUG   : process class started (no child)
+2017-11-03 19:36:27,539: state.pubsub.sub.0000: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 19 2016, 06:48:10) [GCC 5.4.0 20160609]
+2017-11-03 19:36:27,540: state.pubsub.sub.0000: MainProcess                     : MainThread     : INFO    :                      pid: 20018
+2017-11-03 19:36:27,540: state.pubsub.sub.0000: MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2017-11-03 19:36:27,540: state.pubsub.sub.0000: MainProcess                     : MainThread     : INFO    : radical.pilot        version: 0.47-v0.46.2-181-g138b1e15@HEAD-detached-at-origin-rc-v0.46.3
+2017-11-03 19:36:27,540: state.pubsub.sub.0000: MainProcess                     : MainThread     : INFO    : create state_pubsub - sub - tcp://138.201.86.166:41679
+2017-11-03 19:36:27,541: state.pubsub.sub.0000: MainProcess                     : MainThread     : DEBUG   : start process
+2017-11-03 19:36:27,541: state.pubsub.sub.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-11-03 19:36:27,541: state.pubsub.sub.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-11-03 19:36:27,541: state.pubsub.sub.0000: MainProcess                     : MainThread     : DEBUG   : process class started (no child)
+2017-11-03 19:48:37,042: state.pubsub.sub.0000: MainProcess                     : MainThread     : INFO    : parent stops child  20018 -> None [state.pubsub.sub.0000]
+2017-11-03 19:48:37,042: state.pubsub.sub.0000: MainProcess                     : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-11-03 19:48:37,368: state.pubsub.sub.0000: update.0                        : MainThread     : INFO    : parent stops child  20095 -> None [state.pubsub.sub.0000]
+2017-11-03 19:48:37,368: state.pubsub.sub.0000: update.0                        : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
