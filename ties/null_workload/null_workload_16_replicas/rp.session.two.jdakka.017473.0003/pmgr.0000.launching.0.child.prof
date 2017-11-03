@@ -1,0 +1,13 @@
+#time,comp,uid,state,event,msg
+1509731432.5779,sync_abs,pmgr.0000.launching.0.child,MainThread,,,localhost.localdomain:138.201.86.166:1509731432.57:1509731432.57:ntp
+1509731432.7167,component_init,pmgr.0000.launching.0.child,MainThread,,,
+1509731441.3418,get,pmgr.0000.launching.0.child,MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,
+1509731441.3422,advance,pmgr.0000.launching.0.child,MainThread,pilot.0000,PMGR_LAUNCHING,
+1509731441.3425,publish,pmgr.0000.launching.0.child,MainThread,pilot.0000,PMGR_LAUNCHING,
+1509731446.4759,staging_in_start,pmgr.0000.launching.0.child,MainThread,pilot.0000,,
+1509731461.4242,staging_in_stop,pmgr.0000.launching.0.child,MainThread,pilot.0000,,
+1509731461.4243,submission_start,pmgr.0000.launching.0.child,MainThread,pilot.0000,,
+1509731469.7439,submission_stop,pmgr.0000.launching.0.child,MainThread,pilot.0000,,
+1509731469.7440,advance,pmgr.0000.launching.0.child,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
+1509731469.7446,publish,pmgr.0000.launching.0.child,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
+1509732232.6073,flush,pmgr.0000.launching.0.child,MainThread,,,
