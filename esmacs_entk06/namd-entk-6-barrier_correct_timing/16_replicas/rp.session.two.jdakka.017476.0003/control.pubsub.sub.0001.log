@@ -1,0 +1,31 @@
+2017-11-06 03:07:31,120: control.pubsub.sub.0001: pmgr.0000.launching.0           : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 19 2016, 06:48:10) [GCC 5.4.0 20160609]
+2017-11-06 03:07:31,121: control.pubsub.sub.0001: pmgr.0000.launching.0           : MainThread     : INFO    :                      pid: 5589
+2017-11-06 03:07:31,121: control.pubsub.sub.0001: pmgr.0000.launching.0           : MainThread     : INFO    :                      tid: MainThread
+2017-11-06 03:07:31,121: control.pubsub.sub.0001: pmgr.0000.launching.0           : MainThread     : INFO    : radical.pilot        version: 0.47-v0.46.2-181-g138b1e15@HEAD-detached-at-origin-rc-v0.46.3
+2017-11-06 03:07:31,121: control.pubsub.sub.0001: pmgr.0000.launching.0           : MainThread     : INFO    : create control_pubsub - sub - tcp://138.201.86.166:46010
+2017-11-06 03:07:31,122: control.pubsub.sub.0001: pmgr.0000.launching.0           : MainThread     : DEBUG   : start process
+2017-11-06 03:07:31,122: control.pubsub.sub.0001: pmgr.0000.launching.0           : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-11-06 03:07:31,122: control.pubsub.sub.0001: pmgr.0000.launching.0           : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-11-06 03:07:31,122: control.pubsub.sub.0001: pmgr.0000.launching.0           : MainThread     : DEBUG   : process class started (no child)
+2017-11-06 10:14:12,483: control.pubsub.sub.0001: umgr.0000.staging.input.0       : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 19 2016, 06:48:10) [GCC 5.4.0 20160609]
+2017-11-06 10:14:12,483: control.pubsub.sub.0001: umgr.0000.staging.input.0       : MainThread     : INFO    :                      pid: 21765
+2017-11-06 10:14:12,483: control.pubsub.sub.0001: umgr.0000.staging.input.0       : MainThread     : INFO    :                      tid: MainThread
+2017-11-06 10:14:12,483: control.pubsub.sub.0001: umgr.0000.staging.input.0       : MainThread     : INFO    : radical.pilot        version: 0.47-v0.46.2-181-g138b1e15@HEAD-detached-at-origin-rc-v0.46.3
+2017-11-06 10:14:12,483: control.pubsub.sub.0001: umgr.0000.staging.input.0       : MainThread     : INFO    : create control_pubsub - sub - tcp://138.201.86.166:46010
+2017-11-06 10:14:12,484: control.pubsub.sub.0001: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start process
+2017-11-06 10:14:12,484: control.pubsub.sub.0001: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-11-06 10:14:12,484: control.pubsub.sub.0001: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-11-06 10:14:12,484: control.pubsub.sub.0001: umgr.0000.staging.input.0       : MainThread     : DEBUG   : process class started (no child)
+2017-11-06 10:14:13,374: control.pubsub.sub.0001: umgr.0000.scheduling.0          : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 19 2016, 06:48:10) [GCC 5.4.0 20160609]
+2017-11-06 10:14:13,374: control.pubsub.sub.0001: umgr.0000.scheduling.0          : MainThread     : INFO    :                      pid: 21821
+2017-11-06 10:14:13,374: control.pubsub.sub.0001: umgr.0000.scheduling.0          : MainThread     : INFO    :                      tid: MainThread
+2017-11-06 10:14:13,374: control.pubsub.sub.0001: umgr.0000.scheduling.0          : MainThread     : INFO    : radical.pilot        version: 0.47-v0.46.2-181-g138b1e15@HEAD-detached-at-origin-rc-v0.46.3
+2017-11-06 10:14:13,374: control.pubsub.sub.0001: umgr.0000.scheduling.0          : MainThread     : INFO    : create control_pubsub - sub - tcp://138.201.86.166:46010
+2017-11-06 10:14:13,375: control.pubsub.sub.0001: umgr.0000.scheduling.0          : MainThread     : DEBUG   : start process
+2017-11-06 10:14:13,375: control.pubsub.sub.0001: umgr.0000.scheduling.0          : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-11-06 10:14:13,375: control.pubsub.sub.0001: umgr.0000.scheduling.0          : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-11-06 10:14:13,375: control.pubsub.sub.0001: umgr.0000.scheduling.0          : MainThread     : DEBUG   : process class started (no child)
+2017-11-06 11:05:28,474: control.pubsub.sub.0001: umgr.0000.scheduling.0          : umgr.0000.scheduling.0.child.subscriber._base_command_cb: INFO    : parent stops child  21821 -> None [control.pubsub.sub.0001]
+2017-11-06 11:05:28,474: control.pubsub.sub.0001: umgr.0000.scheduling.0          : umgr.0000.scheduling.0.child.subscriber._base_command_cb: DEBUG   : ru_finalize_parent (NOOP)
+2017-11-06 11:05:28,799: control.pubsub.sub.0001: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child  21765 -> None [control.pubsub.sub.0001]
+2017-11-06 11:05:28,799: control.pubsub.sub.0001: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
