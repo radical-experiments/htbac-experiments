@@ -1,0 +1,10 @@
+#time,event,comp,thread,uid,state,msg
+1511740134.6230,sync_abs,pmgr.launching.0.child,MainThread,,,localhost.localdomain:138.201.86.166:1511740134.62:1511740134.62:ntp
+1511740134.7240,component_init,pmgr.launching.0.child,MainThread,,,
+1511740142.5502,get,pmgr.launching.0.child,MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,
+1511740142.5506,advance,pmgr.launching.0.child,MainThread,pilot.0000,PMGR_LAUNCHING,
+1511740142.5510,publish,pmgr.launching.0.child,MainThread,pilot.0000,PMGR_LAUNCHING,
+1511740173.3440,advance,pmgr.launching.0.child,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
+1511740173.3446,publish,pmgr.launching.0.child,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
+1511751748.4621,advance,pmgr.launching.0.child,pmgr.launching.0.child.idler._pilot_watcher_cb,pilot.0000,DONE,
+1511751748.5038,publish,pmgr.launching.0.child,pmgr.launching.0.child.idler._pilot_watcher_cb,pilot.0000,DONE,
